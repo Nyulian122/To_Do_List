@@ -1,0 +1,16 @@
+.root{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+.div_tareas {
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 20px;
+}
