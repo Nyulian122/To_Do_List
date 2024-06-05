@@ -1,33 +1,148 @@
-.root{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: auto;
-    margin-top: 10rem;
-}
-.div_tareas {
-    width: 90%;
-    height: 10rem;
-    display: flex;
-    border: 1px solid black;
-    justify-content: space-between;
-    padding: 20px;
+.root {
+    margin: 0 auto;
+    width: 40%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    text-align: center;
 }
 
-.btn_mas{
-    width: 10rem;
-    background-color: blue;
-    color: white;
-    font-size: 3rem;
-    border-radius: 100%;
+h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 4rem;
+}
+
+.div_tareas {
+    width: 90%;
+    height: 6rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: flex;
+    justify-content: left;
+}
+
+.btn_mas {
+    width: 5rem;
+    height: 5rem;
+    background-color: blueviolet;
+    color: white;
+    font-size: 4rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_mas:hover {
+    background-color: rgb(73, 38, 233);
+    color: white;
 }
 
 .lista_tareas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
 
-    
-            
+.formulario {
+    width: 30rem;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+}
+
+.div_controles {
+    text-align: right;
+}
+
+.btn_cerrar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn_cerrar:hover {
+    background-color: #c0392b;
+}
+
+.div_formulario h2 {
+    margin-bottom: 1rem;
+}
+
+.div_formulario {
+    padding: 20px;
+}
+
+.entrada-tarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#categoria {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.btn-crear {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn-crear:hover {
+    background-color: #2980b9;
+}
+
+
+
+.ocultar {
+    display: none;
+}
+
+.activar_b {
+    display: block;
+}
+
+.activar_f {
+    display: flex;
+}
+
+.activar_g {
+    display: grid;
 }
